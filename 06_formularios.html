@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <!-- Formulário com método POST e ação -->
+    <form action="processar.php" method="post">
+
+        <!-- Campo de texto simples -->
+         <label for="nome">Nome Completo:</label><br>
+         <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- Campo de email com validação -->
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="senha" required><br><br>
+
+         <!-- Campo de senha -->
+          <label for="senha">Senha:</label><br>
+          <input type="password" id="senha" name="senha" required><br><br>
+
+          <!-- Botões de opção (rádio) -->
+           <label>Sexo</label><br>
+           <input type="radio" id="masculino" name="sexo" value="M">
+           <label for="masculino">Masculino</label><br>
+           <input type="radio" id="feminino" name="sexo" value="F">
+           <label for="feminino">feminino</label><br><br>
+
+           <!-- Caixas de seleção (checkbox) -->
+            <label>Interesses:</label><br>
+            <input type="checkbox" id="programação" name="Interesses{}" value="programação">
+            <label for="programação">Programação</label><br><br>
+            <input type="checkbox" id="design">Design</label><br><br>
+            <label for="design">Design</label><br><br>
+
+            <!-- Área de texto -->
+             <label for="comentarios">comentários:</label><br>
+             <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+             <!-- Campo de arquivo  -->
+              <label for="foto">Foto</label><br>
+              <input type="file" id="foto" name="foto"><br><br>
+
+              <!-- Botões do formulário -->
+               <button type="submit">Enviar</button>
+               <button type="reset">Limpar</button>
+    </form>   
+    
+</body>
+</html>
